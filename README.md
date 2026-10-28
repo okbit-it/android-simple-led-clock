@@ -1,5 +1,21 @@
 # Simple LED Clock
 
+## 📥 Скачать приложение
+
+Актуальная стабильная версия: **[1.0.2](https://github.com/okbit-it/android-simple-led-clock/releases/tag/v1.0.2)**.
+
+| Версия Android | Скачать APK |
+| --- | --- |
+| Android 4.0+ | [Скачать для Android 4.0+ (legacy)](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.2/simple-led-clock-1.0.2-android4-plus.apk) |
+| Android 6.0+ | [Скачать для Android 6.0+ (modern)](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.2/simple-led-clock-1.0.2-android6-plus.apk) |
+
+Для Android 6.0 и новее выбирайте **modern**. Варианты заменяют друг друга
+и не устанавливаются параллельно.
+
+- [Контрольные суммы SHA256 — SHA256SUMS](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.2/SHA256SUMS).
+- [Последний стабильный релиз](https://github.com/okbit-it/android-simple-led-clock/releases/latest) — постоянная ссылка.
+- [Все релизы GitHub](https://github.com/okbit-it/android-simple-led-clock/releases).
+
 Актуальная версия исходников: **1.0.2**, versionCode **6**.
 Публичный репозиторий: [okbit-it/android-simple-led-clock](https://github.com/okbit-it/android-simple-led-clock).
 
