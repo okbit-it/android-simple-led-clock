@@ -7,6 +7,17 @@
 ночным расписанием, датчиком освещения, пресетами и защитным сдвигом изображения.
 Русский и английский интерфейс. Пакет: `ru.okbit.ledclock`.
 
+## Скриншоты
+
+Основной экран, настройки отображения и включённое ночное расписание 22:00–07:00.
+Нажмите на превью, чтобы открыть изображение в полном размере.
+
+<p align="center">
+  <a href="docs/screenshots/clock-classic.jpg"><img src="docs/screenshots/clock-classic.jpg" width="220" alt="Основной экран Simple LED Clock с белыми сегментными часами"></a>
+  <a href="docs/screenshots/display-settings.jpg"><img src="docs/screenshots/display-settings.jpg" width="220" alt="Настройки Classic LED: размер цифр и яркость неактивных сегментов"></a>
+  <a href="docs/screenshots/night-schedule.jpg"><img src="docs/screenshots/night-schedule.jpg" width="220" alt="Настройки включённого ночного расписания Simple LED Clock с 22:00 до 07:00"></a>
+</p>
+
 ## Сборка
 
 JDK 17, Android SDK Platform 35 и Build Tools 35.0.0; Gradle 8.11.1,
