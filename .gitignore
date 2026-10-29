@@ -15,3 +15,5 @@ dist/
 *.pem
 *.key
 keystore.properties
+signing.properties
+*.signing.properties

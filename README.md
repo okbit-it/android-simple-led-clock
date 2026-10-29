@@ -2,21 +2,21 @@
 
 ## 📥 Скачать приложение
 
-Актуальная стабильная версия: **[1.0.2](https://github.com/okbit-it/android-simple-led-clock/releases/tag/v1.0.2)**.
+Актуальная стабильная версия: **[1.0.3](https://github.com/okbit-it/android-simple-led-clock/releases/tag/v1.0.3)**.
 
 | Версия Android | Скачать APK |
 | --- | --- |
-| Android 4.0+ | [Скачать для Android 4.0+ (legacy)](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.2/simple-led-clock-1.0.2-android4-plus.apk) |
-| Android 6.0+ | [Скачать для Android 6.0+ (modern)](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.2/simple-led-clock-1.0.2-android6-plus.apk) |
+| Android 4.0+ | [Скачать для Android 4.0+ (legacy)](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.3/simple-led-clock-1.0.3-android4-plus.apk) |
+| Android 6.0+ | [Скачать для Android 6.0+ (modern)](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.3/simple-led-clock-1.0.3-android6-plus.apk) |
 
 Для Android 6.0 и новее выбирайте **modern**. Варианты заменяют друг друга
 и не устанавливаются параллельно.
 
-- [Контрольные суммы SHA256 — SHA256SUMS](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.2/SHA256SUMS).
+- [Контрольные суммы SHA256 — SHA256SUMS](https://github.com/okbit-it/android-simple-led-clock/releases/download/v1.0.3/SHA256SUMS).
 - [Последний стабильный релиз](https://github.com/okbit-it/android-simple-led-clock/releases/latest) — постоянная ссылка.
 - [Все релизы GitHub](https://github.com/okbit-it/android-simple-led-clock/releases).
 
-Актуальная версия исходников: **1.0.2**, versionCode **6**.
+Актуальная версия исходников: **1.0.3**, versionCode **7**.
 Публичный репозиторий: [okbit-it/android-simple-led-clock](https://github.com/okbit-it/android-simple-led-clock).
 
 Офлайн-часы для Android с сегментными стилями, цветами, настройками яркости,
@@ -39,6 +39,9 @@
 JDK 17, Android SDK Platform 35 и Build Tools 35.0.0; Gradle 8.11.1,
 AGP 8.9.3, Kotlin 2.1.20. Настройте Android SDK через `ANDROID_HOME`
 или локальный `local.properties` (не включайте его в Git).
+Для подписанной release-сборки настройте внешний файл через
+`CLOCK_RELEASE_SIGNING_FILE` по [инструкции](docs/RELEASE-SIGNING.ru.md).
+Без ключа доступны тесты и lint; выпуск APK будет заблокирован.
 
 ```sh
 sh ./gradlew :app:assembleModernRelease :app:assembleLegacyRelease
@@ -47,14 +50,21 @@ sh ./gradlew :app:testLegacyReleaseUnitTest -PlegacyAndroid
 ```
 
 Modern: Android 6.0+ (minSdk 23). Legacy: Android 4.0+ (minSdk 14).
-Оба варианта имеют versionCode 6, targetSdk 35 и заменяют друг друга при установке.
+Оба варианта имеют versionCode 7, targetSdk 35 и заменяют друг друга при установке.
 PNG launcher icon исправляет воспроизведённый сбой установки на проверенном устройстве.
 
-Поставляемые APK сохраняют прежний сертификат разработки для совместимости обновлений.
-Приватный ключ в исходники не входит. Самостоятельная сборка использует собственный
-локальный debug-сертификат и не гарантирует обновление поверх поставляемого APK.
+Начиная с v1.0.3 оба APK используют постоянную подпись OKBIT. Приватный ключ
+и параметры подписи хранятся вне репозитория; debug fallback запрещён.
+SHA-256 сертификата:
+`70F04D575DD893BF063C43BE5B6FBD601BEE269F0D24CDD6A34D1E84FCBD2833`.
 
-Проверка modern 1.0.2 на HONOR / Android 16 ранее подтверждена пользователем;
+**Переход с v1.0.2:** прежняя версия подписана отладочным сертификатом.
+Необходимо удалить старое приложение и установить v1.0.3 заново;
+локальные настройки и пресеты будут потеряны. Экспорт настроек не реализован.
+Для следующих обновлений сохраняется постоянный сертификат OKBIT.
+
+Проверка modern 1.0.2 на HONOR / Android 16 ранее подтверждена пользователем.
+Установка и запуск именно v1.0.3 на физических устройствах ещё не проверялись;
 это не проверка всех Android-устройств. Внутренние отчёты сборок и история разработки не входят в этот репозиторий.
 
 ## Лицензия
